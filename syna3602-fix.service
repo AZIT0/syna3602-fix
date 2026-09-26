@@ -1,0 +1,12 @@
+[Unit]
+Description=SYNA3602 physical button fix (re-emit RIGHT/MIDDLE on virtual pointer)
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/local/bin/syna3602-fix.py
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

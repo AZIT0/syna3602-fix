@@ -44,12 +44,19 @@ Mapeo final:
 
 ## Instalación
 
+En una línea (Fedora, Arch/CachyOS, Debian/Ubuntu):
+
 ```bash
-sudo bash install.sh
+curl -sSL https://raw.githubusercontent.com/AZIT0/syna3602-fix/master/install.sh | sudo bash
 ```
 
-Requiere `python-evdev` (el instalador lo pone solo en
-Arch/CachyOS, Fedora y Debian/Ubuntu) y systemd.
+O clonando el repo:
+
+```bash
+git clone https://github.com/AZIT0/syna3602-fix.git
+cd syna3602-fix
+sudo bash install.sh
+```
 
 Verificar:
 
